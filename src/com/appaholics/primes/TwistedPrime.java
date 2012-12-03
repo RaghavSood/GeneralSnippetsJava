@@ -107,7 +107,7 @@ public class TwistedPrime {
 		if (n % 2 == 0)
 			return false; // Can't be prime if it is a multiple of 2
 		for (int i = 3; i * i <= n; i += 2) { // We only need to check against
-												// odd numbers upto Ãn
+												// odd numbers upto square root n
 			if (n % i == 0)
 				return false;
 		}
